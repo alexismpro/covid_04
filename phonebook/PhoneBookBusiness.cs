@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
 using System.Text;
 
@@ -45,6 +46,26 @@ namespace phonebook
             }
 
             return cm;
+        }
+        public static ObservableCollection<ContactModel> getAllContacts()
+        {
+            ContactModel cm = null;
+
+            DataTable dt = new DataTable();
+            ObservableCollection<ContactModel> contacts = new ObservableCollection<ContactModel>();
+
+            dt = dao.getAll();
+
+            if (dt != null)
+            {
+                foreach (DataRow row in dt.Rows)
+                {
+                    cm = RowToContactModel(row);
+                    contacts.Add(cm);
+                }
+            }
+
+            return contacts;
         }
 
         private static ContactModel RowToContactModel(DataRow row)

@@ -17,7 +17,7 @@ namespace phonebook
         public DbConnection()
         {
             if (Connection == null)
-                Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["conString"].ConnectionString);
+                Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["connString"].ConnectionString);
         }
 
         private SqlConnection open()
@@ -53,7 +53,10 @@ namespace phonebook
             {
                 command.Connection = open();
                 command.CommandText = _query;
-                command.Parameters.AddRange(parameters);
+                if (parameters != null)
+                {
+                    command.Parameters.AddRange(parameters);
+                }
                 Debug.WriteLine("\n" + "\n" + parameters + "\n" + "\n");
                 Debug.WriteLine("\n" + "\n" + _query + "\n" + "\n");
                 Debug.WriteLine("\n" + "\n" + command + "\n" + "\n");

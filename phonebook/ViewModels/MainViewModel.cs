@@ -1,6 +1,8 @@
 ﻿using phonebook.ViewModels.Commands;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 using System.Windows;
 
@@ -8,6 +10,27 @@ namespace phonebook.ViewModels
 {
     class MainViewModel:BaseViewModel
     {
+        private BaseViewModel _vm;
+        public BaseViewModel VM
+        {
+            get { return _vm; }
+            set
+            {
+                _vm = value;
+                OnPropertyChanged();
+            }
+        }
+        private ObservableCollection<ContactModel> contacts = new ObservableCollection<ContactModel>();
+
+        public ObservableCollection<ContactModel> Contacts
+        {
+            get => contacts;
+            private set
+            {
+                contacts = value;
+                OnPropertyChanged();
+            }
+        }
         private ContactModel selectedContact;
 
         public ContactModel SelectedContact
@@ -39,7 +62,10 @@ namespace phonebook.ViewModels
         public MainViewModel()
         {
             SearchContactCommand = new RelayCommand(SearchByContact);
-            SelectedContact = PhoneBookBusiness.GetContactById(1);
+
+            VM = this;
+            Contacts = PhoneBookBusiness.getAllContacts();
+            SelectedContact = Contacts.First<ContactModel>();
         }
 
         private void SearchByContact(object parameter)

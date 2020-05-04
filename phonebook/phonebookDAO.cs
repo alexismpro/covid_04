@@ -10,11 +10,11 @@ namespace phonebook
     // DAO = Data Access Object
     class phonebookDAO
     {
-        private DbConnection con;
+        private DbConnection conn;
 
         public phonebookDAO()
         {
-            con = new DbConnection();
+            conn = new DbConnection();
         }
 
         public DataTable searchByName(string _name)
@@ -28,7 +28,7 @@ namespace phonebook
             parameters[1] = new SqlParameter("@lastName", SqlDbType.NVarChar);
             parameters[1].Value = _name;
 
-            return con.ExecuteSelectQuery(_query, parameters);      //Return DataTable
+            return conn.ExecuteSelectQuery(_query, parameters);      //Return DataTable
         }
 
         public DataTable searchById(int _id)
@@ -40,7 +40,15 @@ namespace phonebook
             parameters[0].Value = _id;
             Debug.WriteLine("\n" + "\n" + _id + "\n" + "\n");
 
-            return con.ExecuteSelectQuery(_query, parameters);      //Return DataTable
+            return conn.ExecuteSelectQuery(_query, parameters);      //Return DataTable
+        }
+
+        public DataTable getAll()
+        {
+            string _query = $"SELECT * " +
+                            $"FROM [Contacts] ";
+
+            return conn.ExecuteSelectQuery(_query, null);
         }
     }
 }

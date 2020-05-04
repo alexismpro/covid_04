@@ -1,7 +1,3 @@
-C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\MainWindow.g.cs
-C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\App.g.cs
-C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\phonebook_MarkupCompile.cache
-C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\phonebook_MarkupCompile.lref
 C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\bin\Debug\netcoreapp3.1\phonebook.exe
 C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\bin\Debug\netcoreapp3.1\phonebook.dll.config
 C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\bin\Debug\netcoreapp3.1\phonebook.deps.json
@@ -15,7 +11,10 @@ C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myW
 C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\phonebook.csprojAssemblyReference.cache
+C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\phonebook_MarkupCompile.cache
+C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\phonebook_MarkupCompile.lref
 C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\MainWindow.baml
 C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\phonebook.g.resources
 C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\phonebook.csproj.CoreCompileInputs.cache
