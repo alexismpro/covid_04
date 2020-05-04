@@ -24,3 +24,4 @@ C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myW
 C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\phonebook.dll
 C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\phonebook.pdb
 C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\phonebook.genruntimeconfig.cache
+C:\Users\puiss\Desktop\SchoolStuff\AppsDev\__COVID\04_24_BDetPlus\travail_04\myWork\phonebook\phonebook\obj\Debug\netcoreapp3.1\phonebook.csprojAssemblyReference.cache

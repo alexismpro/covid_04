@@ -15,6 +15,11 @@ namespace phonebook
         private string phone;
         private string mobile;
 
+        public ContactModel()
+        {
+
+        }
+
         public int ContactID
         {
             get => contactID;

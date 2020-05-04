@@ -101,5 +101,14 @@ namespace phonebook
 
             return cm;
         }
+
+        public static int NewContact(ContactModel cm)
+        {
+            int add=0;
+
+            dao.New(cm);
+
+            return add;
+        }
     }
 }

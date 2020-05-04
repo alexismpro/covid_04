@@ -55,6 +55,7 @@ namespace phonebook.ViewModels
         }
 
         public RelayCommand SearchContactCommand { get; set; }
+        public RelayCommand NewContactCommand { get; set; }
 
 
 
@@ -62,10 +63,18 @@ namespace phonebook.ViewModels
         public MainViewModel()
         {
             SearchContactCommand = new RelayCommand(SearchByContact);
+            NewContactCommand = new RelayCommand(NewContact);
 
             VM = this;
             Contacts = PhoneBookBusiness.getAllContacts();
             SelectedContact = Contacts.First<ContactModel>();
+        }
+
+        private void NewContact(object c)
+        {
+            ContactModel newContact = new ContactModel();
+
+            SelectedContact = newContact;
         }
 
         private void SearchByContact(object parameter)

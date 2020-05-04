@@ -15,11 +15,13 @@
                 <MenuItem Header="_Édition">
                 </MenuItem>
                 <MenuItem Header="Enregistrement">
-                    <MenuItem Header="Nouveau" />
+                    <MenuItem Header="Nouveau" Command="{Binding NewContactCommand}"/>
                 </MenuItem>
             </Menu>
         </StackPanel>
         <ToolBar DockPanel.Dock="Top">
+            <Button Content="New Contact" Command="{Binding NewContactCommand}"/>
+            <Separator/>
             <TextBlock Text="Recherche : "/>
             <TextBox x:Name="txtCriteria" HorizontalAlignment="Right" Width="150"/>
             <Button  Grid.Row="0" Grid.Column="1" Content="Recherche" 
@@ -72,6 +74,10 @@
                 <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding SelectedContact.Phone}"/>
                 <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding SelectedContact.Mobile}"/>
                 <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding SelectedContact.ContactID}"/>
+
+
+                <Button Grid.Row="0" Grid.Column="0" Content="Enregistrer"/>
+                <Button Grid.Column="1" Content="Supprimer"/>
             </Grid>
         </Grid>
     </DockPanel>
