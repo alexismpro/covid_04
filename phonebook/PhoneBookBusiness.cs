@@ -29,6 +29,26 @@ namespace phonebook
             return cm;
         }
 
+        public static ObservableCollection<ContactModel> GetContactsByName(string _name)
+        {
+            ContactModel cm = null;
+            ObservableCollection<ContactModel> collContacts = new ObservableCollection<ContactModel>();
+            DataTable dt = new DataTable();
+
+            dt = dao.searchByName(_name);
+
+            if (dt != null)
+            {
+                foreach (DataRow row in dt.Rows)
+                {
+                    cm = RowToContactModel(row);
+                    collContacts.Add(cm);
+                }
+            }
+
+            return collContacts;
+        }
+
         public static ContactModel GetContactById(int _id)
         {
             ContactModel cm = null;
