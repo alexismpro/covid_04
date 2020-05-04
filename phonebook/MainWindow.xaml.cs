@@ -20,6 +20,7 @@ namespace phonebook
     /// </summary>
     public partial class MainWindow : Window
     {
+        //comment for 4.2 commit
         public MainWindow()
         {
             InitializeComponent();
